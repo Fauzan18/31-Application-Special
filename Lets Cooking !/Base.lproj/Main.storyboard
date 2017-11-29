@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,1077 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lets_Cooking__" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fph-9e-IsW">
+                                <rect key="frame" x="29" y="58" width="317" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="SarapaN">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="72" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Indonesia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGI-j5-z4L">
+                                <rect key="frame" x="150" y="138" width="74" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Flag-map_of_Indonesia_transparent" translatesAutoresizingMaskIntoConstraints="NO" id="DjE-3X-p8V">
+                                <rect key="frame" x="0.0" y="440" width="375" height="166"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="restaurant-1-300x300" translatesAutoresizingMaskIntoConstraints="NO" id="ddy-fW-zdI">
+                                <rect key="frame" x="76" y="167" width="222" height="176"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSU-F5-M3G">
+                                <rect key="frame" x="118" y="351" width="139" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Click">
+                                    <color key="titleColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="MSN-0D-Pcd" kind="show" id="nH9-bG-9ji"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="248.80000000000001" y="114.69265367316342"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fFu-6y-tls">
+            <objects>
+                <viewController id="MSN-0D-Pcd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1VW-e5-pPI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ijk-67-i62">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Page 1" id="chp-Lq-VPV">
+                                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="rewind" id="KgS-xb-hLG"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="fastForward" id="hMF-dM-TnT">
+                                            <connections>
+                                                <segue destination="07Z-lO-2GO" kind="show" id="AFP-tP-Z48"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWW-Aq-7hQ">
+                                <rect key="frame" x="0.0" y="44" width="375" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="nasikuning2-1"/>
+                                <connections>
+                                    <segue destination="ZNF-IA-SL2" kind="show" id="9yC-Ps-FAd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uY-dB-tLk">
+                                <rect key="frame" x="0.0" y="253" width="375" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="pecel-ayu"/>
+                                <connections>
+                                    <segue destination="bkG-el-1uT" kind="show" id="kAd-Uk-ttQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAZ-y7-1fE">
+                                <rect key="frame" x="0.0" y="463" width="375" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="lontong-sayur-spesial"/>
+                                <connections>
+                                    <segue destination="Man-sL-421" kind="show" id="KPC-yD-rYb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nasi Kuning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bly-6j-Iko">
+                                <rect key="frame" x="0.0" y="196" width="230" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nasi Pecel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5c-Ri-cAP">
+                                <rect key="frame" x="0.0" y="405" width="230" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lontong Sayur" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQ6-0Z-ELV">
+                                <rect key="frame" x="0.0" y="619" width="230" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="H5T-MY-EZl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="51W-5D-pJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="967" y="115"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hBz-DC-gFE">
+            <objects>
+                <viewController id="ZNF-IA-SL2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I9m-ed-puk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Foh-vH-E2s">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Nasi Kuning" id="xLx-4Z-Hc3">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="z4g-3U-6bM">
+                                            <connections>
+                                                <segue destination="MSN-0D-Pcd" kind="show" id="mfX-8l-JB5"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iap-tl-L89">
+                                <rect key="frame" x="0.0" y="44" width="375" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="nasikuning2-1"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kS1-Zn-tZR">
+                                <rect key="frame" x="0.0" y="256" width="375" height="411"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">Bahan-bahan
+
+- 1 kg / 8 cangkir beras pulen
+- 4 lembar daun salam
+- 2 batang serai, memarkan
+- 900 ml santan perasan kedua
+- 1 ruas jari kunyit
+- ½ ruas jari jahe
+- 2 cm lengkuas muda
+- 5 siung bawang merah
+- 4 sdt garam
+- 2 lembar daun pandan wangi
+- lauk pauk pelengkap
+Cara Membuat
+
+- Cuci bersih beras pulen hingga air berwarna jernih, sisihkan.
+- Masukkan beras pulen dalam wadah panci, rendam dengan air, sisihkan.
+- Haluskan bumbu-bumbu berupa kunyit, jahe, lengkuas, bawang merah, dan garam.
+- Rebus terlebih dahulu bumbu halus bersama dengan santan agar santan dan bumbu dapat bercampur saat dimasak dengan beras. Biarkan dingin.
+- Buang air rendaman beras, masukkan santan berbumbu dengan cara disaring agar nasi menjadi lebih cantik.
+- Masukkan daun salam dan serai, rebus beras di atas api sedang hingga air menyusut dan beras menjadi lembek, aduk sesekali.
+- Ambil daun salam dan serai dari beras yang sudah menjadi nasi.
+- Siapkan kukusan, masukkan nasi ke dalam panci kukus, tambahkan daun pandan wangi, kukus nasi kurang lebih selama 1-1,5 jam agar nasi lebih tanak dan pulen.
+- Siapkan cetakan tumpeng, cetak nasi kuning di atas tatakan, tambahkan lauk pauk sesuai selera
+- Sajikan.</mutableString>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="373-Qh-jYU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IIZ-0D-Uki" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="200.80000000000001" y="894.60269865067471"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RjX-8G-Omp">
+            <objects>
+                <viewController id="bkG-el-1uT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vg2-Ya-AZV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i0u-mZ-RNb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Nasi Pecel" id="X22-4C-V6R">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="zRe-L3-iKd">
+                                            <connections>
+                                                <segue destination="MSN-0D-Pcd" kind="show" id="j2H-NV-ZeO"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdT-pQ-7mv">
+                                <rect key="frame" x="0.0" y="44" width="375" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="pecel-ayu"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zkh-F9-opC">
+                                <rect key="frame" x="0.0" y="256" width="375" height="411"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">Bahan:
+1 ikat bayam, siangi
+10 batang kacang panjang, potong 2 cm
+100 gram taoge, buang ekornya
+2 buah mentimun sayur, potong tipis
+250 ml air masak
+250 gram kacang tanah, goreng
+3 buah cabai merah besar, goreng
+Bumbu:
+4 siung bawang putih, goreng
+1 sdt asam jawa
+3 lembar daun jeruk
+3 ruas jari kencur
+½ sdt garam
+½ sdt gula pasir
+Trancam Mentah
+1 buah mentimun, cincang kasar
+3 sdm petai cina
+10 kuntum daun kemangi
+3 sdm taoge pendek
+Peyek Kacang
+Bahan:
+100 gram kacang tanah, belah 2
+150 gram tepung beras
+1 sdm tepung kanji
+100 ml santan kental dari 250 gram kelapa parut
+250 ml air
+Minyak goreng secukupnya
+Bumbu, haluskan:
+4 siung bawang putih
+1 sdm ketumbar
+4 butir kemiri
+3 cm kunyit
+1 sdt garam
+5 lembar daun jeruk
+Tempe Mendol
+Bahan:
+300 gram tempe, hancurkan
+50 gram tempe setengah asam
+2 sdm tepung terigu
+Minyak goreng secukupnya
+Bumbu, haluskan:
+4 siung bawang putih
+4 butir bawang merah
+4 lembar daun jeruk
+4 buah cabai merah besar
+3 cm kencur
+3 cm lengkuas, haluskan parut
+⅓ sdt garam
+¼ sdt gula pasir
+Cara membuat
+Pecel
+Rebus sayuran satu per satu, tiriskan
+Haluskan kacang tanah dan cabai merah bersama bumbu hingga rata. Cairkan dengan air masak saat akan disajikan
+Atur sayuran diatas sepiring nasi, siram dengan bumbu kacang
+Trancam Mentah
+Campurkan semua bahan, sajikan sebagai pelengkap nasi pecel
+Peyek Kacang
+Campurkan tepung beras dan tepung kanji, tuang santan dan air sedikit demi sedikit hingga tepung larut. Masukkan bumbu, dan aduk rata
+Panasakan minyak banyak diatas api sedang. Ambil ½ bagian adonan, tambahkan ⅓ bagian kacang, aduk. Tuang 1 sdm adonan yang sudah berisi kacang di tepi wajan, tipis dan rata. Siram dengan minyak panas hingga adonan terlepas dari pinggir wajan. Goreng hingga kuning dan kering. Lakukan terus hingga adonan habis
+Tempe Mendol
+Campur bumbu dan bahan (kecuali minyak goreng), aduk rata, bentuk bulat panjang. Diamkan beberapa saat
+Goreng di atas api sedang hingga kecokelatan. Angkat dan sajikan
+Tempe Asam:
+Rendam 200 gram tempe ke dalam 100 ml air + 1 sdt garam selama 2 menit. Angkat dan tiriskan
+Bungkus tempe dengan daun, masukkan ke plastik, diamkan 24 jam</mutableString>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ww8-0y-sBC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SfD-wl-Qmj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="966" y="906"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vXa-Ix-2IT">
+            <objects>
+                <viewController id="Man-sL-421" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T2c-jh-AHf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cK1-3h-jfk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Lontong Sayur" id="JC7-Qw-MdX">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="acD-oL-uJG">
+                                            <connections>
+                                                <segue destination="MSN-0D-Pcd" kind="show" id="ESn-o6-Yyk"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1L-AL-MD4">
+                                <rect key="frame" x="0.0" y="44" width="375" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="lontong-sayur-spesial"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="crV-Gj-WqL">
+                                <rect key="frame" x="0.0" y="256" width="375" height="411"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">Bahan-bahan untuk membuat lontong plastik:
+
+Beras putih ¼ kg
+Plastik ukuran ¼ kg secukupnya
+Tusuk gigi secukupnya
+Air bersih
+Setelah menyiapkan bahan-bahan tersebut Anda dapat mengikuti resep cara membuat lontong berikut:
+
+Cuci beras
+Cuci beras putih yang telah Anda siapkan sampai bersih. Setelah bersih, tiriskan beras tersebut sampai airnya hilang atau kesat.
+
+Siapkan plastik
+Selanjutnya, siapkan plastik yang akan Anda gunakan untuk membuat lontong plastik. Berbeda dengan cara membuat lontong daun pisang yang langsung membungkusnya saja. Jika Anda menggunakan plastik sebagai pembungkus maka Anda perlu membuat lubang. Lubang ini akan menjadi pintu keluar masuk air untuk membuat lontong. Jadi, Anda harus menusuk-nusuk plastik menggunakan tusuk gigi yang Anda siapkan. Berikan beberapa tusukan, jangan terlalu sedikit dan jangan terlalu banyak. Selain itu, jaraknya juga tidak boleh terlalu dekat atau terlalu jauh.
+
+Isi plastik
+Isi plastik yang sudah Anda siapkan tersebut menggunakan beras yang sudah Anda tiriskan. Isi 1/3 bagiannya saja, jangan terlalu banyak ataupun terlalu sedikit. Jika terlalu sedikit maka pembuatan lontong dapat menjadi gagal. Sedangkan jika terlalu banyak beras, maka lontong akan keras dan kurang nikmat.
+
+Tutup plastik
+Cara membuat lontong selanjutnya yaitu tutup plastik. Caranya cukup mudah yaitu dengan memanfaatkan api lilin. Sulut ujung plastik agar plastik tertutup rapat, jangan membakarnya. Cukup mendekatkan plastik di pinggir api kemudian berikan tekanan agar plastik menutup rapat.
+
+Masak lontong
+Resep yang terakhir yaitu siapkan panci untuk merebus lontong. Masukkan kemasan plastik berisi beras kedalam panci tersebut. Tuang air sampai menutupi kemasan plastik tersebut. Rebus lontong plastik ini selama 2 sampai 3 jam dengan menggunakan api besar. Setelah itu, Anda dapat meniriskannya dan lontong siap dihidangkan.
+
+Iris lontong dan buang plastiknya, sajikan lontong dengan makanan pendamping seperti opor ayam dan lain sebagainya. Demikian resep cara membuat lontong yang mudah dan praktis menggunakan pembungkus plastik.</mutableString>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="qJ3-fY-xcy"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LqO-81-Ebv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1745" y="901"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0kF-vL-ji7">
+            <objects>
+                <viewController id="dLk-gE-szv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Clo-jK-mtt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zdY-bQ-97h">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Indomie Goreng" id="6Cw-b3-7ah">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="Jof-ip-d4S">
+                                            <connections>
+                                                <segue destination="07Z-lO-2GO" kind="show" id="Qpz-OT-vRO"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfP-oc-XJ5">
+                                <rect key="frame" x="0.0" y="44" width="375" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="indomie-jumbo"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qQ7-GP-IKn">
+                                <rect key="frame" x="0.0" y="256" width="375" height="411"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">Alat-alat yang diperlukan:
+Panci
+Kompor
+Penyaring makanan
+Mangkok
+Sendok + Garpu
+Microwave (kalo ga ada juga ga papa.)
+Bahan-bahan yang disiapkan:
+Indomie Goreng (jangan diremuk)
+Air
+1 butir telur ayam
+Cara memasak:
+Didihkan air di panci,
+Sambil menunggu air mendidih, buka bungkusan minyak, sambal cabe dan kecap dari kemasan Indomie Goreng lalu dituang ke mangkok.
+Jika air sudah mendidih, masukkan Indomie Goreng.
+Kemudian pecahkan telur ayam (jangan dikocok) dan masukkan ke sebelah Indomie di dalam panci.
+Hancurkan bagian putih telur di dalam rebusan, tapi jangan sampai bagian kuning telur rusak.
+Tunggu beberapa saat (PERHATIAN: jangan sampai tekstur Indomienya terlalu lembek dan mengembang), angkat seluruh Indomie dengan garpu dan masukkan ke dalam penyaring makanan.
+Setelah Indomie tersaring dari air, tuang Indomie ke piring yang telah berisi berisi bumbu.
+Selagi bagian kuning telur masih setengah matang (belum matang di bagian dalam), angkat panci dari kompor dan saring telur dari rebusan.
+Tuangkan telur ke atas Indomie.
+Aduk-aduk dan hancurkan bulatan kuning telur setengah matang hingga seluruh bagian Indomie tercampur cairan kuning telur.
+Taburkan bubuk dan bawang goreng ke Indomie. aduk lagi sampai merata.
+Menurut saya yang bikin enak adalah cairan kuning telur tersebut yang tercampur dengan Indomie. Kuning telur tersebut akan matang dengan panasnya Indomie yang baru saja keluar dari rebusan. Kalau merebus telurnya dengan air rebusan Indomie kayaknya juga berpengaruh. (?)
+Nah, buat yang punya microwave, supaya lebih nikmat, masukkan Indomie yang sudah jadi itu ke dalam microwave selama 1 menit. Selamat menikmati :9
+
+Kalo untuk Indomie Kuah, ini caranya..
+Alat-alat yang diperlukan:
+Panci
+Kompor
+Mangkok
+Sendok + Garpu
+Bahan-bahan yang disiapkan:
+Indomie kuah rasa apa saja (jangan diremuk)
+Air
+1 butir telur ayam
+Cara memasak:
+Didihkan air di panci (jangan boros, kira-kira cukup untuk merendam seluruh bagian mie).
+Jika air sudah mendidih, masukkan Indomie.
+Ketika Indomienya sudah tidak kaku (setengah matang), buang sebagian air rebusan hingga yang tersisa hanya sedikit (kira-kira satu mangkok)
+Kemudian masukkan semua bumbu ke dalam rebusan mie.
+Pecahkan telur, masukkan ke dalam rebusan dan aduk hingga seluruh bagian telurnya hancur.
+Tunggu beberapa saat (PERHATIAN: jangan sampai tekstur Indomienya terlalu lembek dan mengembang).
+Tuangkan seluruhnya ke dalam mangkok, mie siap dimakan.
+Kalau untuk Indomie Kuah, kunci yang bikin enak itu kalo kuahnya nggak terlalu banyak. Oiya dan juga mienya jangan terlalu mengembang atau lembek, buat Indomie Goreng ataupun Rebus.</mutableString>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="O0a-bE-Io9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kOZ-ex-Rhc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2460" y="858"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6ac-Wd-mMo">
+            <objects>
+                <viewController id="AVp-7f-lae" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cTN-Vz-hWn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0eF-IV-oF1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Nasi Kucing" id="3rT-8y-pVg">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="6NC-pr-tto">
+                                            <connections>
+                                                <segue destination="07Z-lO-2GO" kind="show" id="ejJ-TN-gmo"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJi-Ep-ZJt">
+                                <rect key="frame" x="0.0" y="44" width="375" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="nasi-kucing-1"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="t3c-jO-HKP">
+                                <rect key="frame" x="0.0" y="256" width="375" height="411"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">Bahan Resep Nasi Kucing Lezat Khas Jogja
+Siapkan bahan-bahan berikut ini untuk membuat nasi kucing lezat, khususnya nasi kucing resep khas Jogja:
+Bahan Nasi
+400 gram nasi putih
+Daun pisang sebagai wadah
+Bahan Kering Tempe
+300 gram tempe yang sudah dipotong dengan bentuk korek api, goreng.
+3 siung bawang putih yang sudah diiris-iris
+5 siung bawang merah yang sudah diiris-iris
+2 cm lengkuas yang sudah diiris-iris
+5 buah cabe yang sudah diiris serong. Jumlah cabe ini juga dapat Anda kurangi atau tambahi sesuai selera Anda dengan tingkat kepedasannya.
+50 ml air
+Gula merah sesuai selera Anda, iris.
+Garam secukupnya
+Minyak goreng secukupnya.
+Bahan Balado Teri
+150 gram ikan teri yang sudah digoreng kering
+Minyak goreng secukupnya
+Bahan Bumbu Halus
+5 buah cabai merah atau sesuai selera Anda
+2 siung bawang putih
+5 siung bawang merah
+Sambal terasi
+2 cm lengkuas yang sudah diiris-iris
+Pastikan semua bahan membuat nasi kucing yang Anda gunakan di atas dalam kondisi yang baik. Jadi, aplikasi cara membuat hidangan khas Jogja ini yang Anda lakukan pun akan memberikan hasil lebih lezat.
+Cara Membuat Nasi Kucing Lezat Khas Jogja
+Siapkan semua alat dan bahan yang diperlukan. Atur sedemikian rupa hingga posisinya mudah terjangkau.
+Untuk membuat kering tempe, panaskan minyak, tumis bawang merah, bawang putih, cabai, dan lengkuas hingga harum. Masukkan gula merah secukupnya. Tuangkan air, lalu masak hingga tampak berserabut. Selanjutnya masukkan tempe yang sudah diiris-iris. Aduk dan tambahkan garam. Masak hingga matang lalu angkat.
+Untuk membuat balado teri, panaskan minyak lalu tumis bumbu halus hingga matang. Selanjutnya masukkan teri, garam, dan gula. Aduk rata dan tunggu sampai matang. Angkat.
+Siapkan nasi pada wadah daun pisang. Tutupi bagian atas nasi dengan daun pisang untuk tempat lauk.
+Tempatkan lauk di atas daun pisang yang diletakkan di atas nasi.
+Sajian nasi kucing dengan cita rasa dan cara penyajian khas Jogja siap Anda nikmati.
+</mutableString>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ktk-QL-sGb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rl7-Ph-QOJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3465" y="981"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ddK-jh-Eci">
+            <objects>
+                <viewController id="07Z-lO-2GO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="clu-NU-kqJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wku-C3-vxQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Page 2" id="zPh-qv-p2I">
+                                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="rewind" id="aqC-fA-YbE">
+                                            <connections>
+                                                <segue destination="MSN-0D-Pcd" kind="show" id="wur-V7-p2c"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="fastForward" id="qt9-5B-IEy">
+                                            <connections>
+                                                <segue destination="ZQJ-4E-H85" kind="show" id="iFl-Mw-9uH"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VsC-u7-Fve">
+                                <rect key="frame" x="0.0" y="463" width="375" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="nasi-kucing-1"/>
+                                <connections>
+                                    <segue destination="AVp-7f-lae" kind="show" id="3rX-pf-nZC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lX2-mA-B9p">
+                                <rect key="frame" x="0.0" y="44" width="375" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="indomie-jumbo"/>
+                                <connections>
+                                    <segue destination="dLk-gE-szv" kind="show" id="xg8-mz-WRk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIx-hs-FXX">
+                                <rect key="frame" x="0.0" y="253" width="375" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Nasi-uduk-jakarta"/>
+                                <connections>
+                                    <segue destination="NUq-Ys-QO4" kind="show" id="BuW-Gb-FTD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Indomie Goreng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9a-DV-cWo">
+                                <rect key="frame" x="0.0" y="196" width="230" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nasi Kucing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXp-qg-XoT">
+                                <rect key="frame" x="0.0" y="619" width="230" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nasi Uduk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0I-5J-lH8">
+                                <rect key="frame" x="0.0" y="405" width="230" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="cR3-br-Hrx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ip-A1-ntP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1772" y="115"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jQ4-vi-BCS">
+            <objects>
+                <viewController id="ZQJ-4E-H85" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ojb-gs-62G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GMU-n5-BmI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Page 2" id="Abk-Pe-aKF">
+                                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="rewind" id="z5i-SA-RUs">
+                                            <connections>
+                                                <segue destination="07Z-lO-2GO" kind="show" id="4CF-pi-pbH"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="yhA-3P-p4o">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="Gg8-wU-HA6"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCU-qt-kc3">
+                                <rect key="frame" x="0.0" y="463" width="375" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="cara-membuat-bubur-sumsum-candil"/>
+                                <connections>
+                                    <segue destination="btQ-ee-Kzm" kind="show" id="23V-Zb-gk6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCc-Nr-3lj">
+                                <rect key="frame" x="0.0" y="44" width="375" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="nasi-liwet-solo-1"/>
+                                <connections>
+                                    <segue destination="VgK-o9-bFc" kind="show" id="mSn-c1-947"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tq-Z8-kVi">
+                                <rect key="frame" x="0.0" y="253" width="375" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="resep-bubur-ayam-sarapan-simpel-20-menit"/>
+                                <connections>
+                                    <segue destination="XSC-T6-eDw" kind="show" id="0g4-72-6m9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nasi Liwet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQm-8D-hOf">
+                                <rect key="frame" x="0.0" y="185" width="230" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bubur Sumsum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDd-RK-aR4">
+                                <rect key="frame" x="0.0" y="608" width="230" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bubur Ayam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5t0-fJ-jCD">
+                                <rect key="frame" x="0.0" y="394" width="230" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="FHU-uY-caQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mdH-kN-XPv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2607" y="111"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tqc-SW-hv5">
+            <objects>
+                <viewController id="btQ-ee-Kzm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vh3-w2-A02">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BW0-ad-LoB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Bubur Sumsum" id="DsK-o7-QBR">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="gwN-og-Zrb">
+                                            <connections>
+                                                <segue destination="ZQJ-4E-H85" kind="show" id="rT9-Uv-fya"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1T-MZ-oan">
+                                <rect key="frame" x="0.0" y="44" width="375" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="cara-membuat-bubur-sumsum-candil"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KnM-48-wAE">
+                                <rect key="frame" x="0.0" y="256" width="375" height="411"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">Bahan bahan Resep Bubur Sumsum Enak
+Bahan utama untuk membuat resep ini adalah 100 gram tepung beras kualitas bagus. Gunakan tepung beras yang bagus, putih bersih dan tidak bau apek supaya hasilnya sempurna.
+Santal Kental yang alami kurang lebih sebanyak 650 ml. Sebaiknya menggunakan santan yang dibuat dari persan 1 buah kelapa supaya lebih legit dan gurih rasanya.
+Garam dapur beryodium supaya lebih gurih secukupnya atau kurang lebih sebanyak setengah sendok kecil saja.
+Daun pandan ukuran sedang besar kurang lebih sebanyak 6 lembar saja supaya aromanya lebih harum alami. 3 lembar nanti digunakan untuk membuat buburnya, 2 lembar untuk campuran saus gulanya dan 1 lembar untuk membuat kuah santannya. Jangan lupa buat simpulan terlebih dahulu supaya lebih rapi.
+Gula merah atau gula jawa sebanyak kurang lebih 250 gram. Potong sisir halus gula supaya mudah saat dimasak menjadi saus gulanya nanti.
+Santan kental untuk membuat kuah santannya kurang lebih sebanyak 200 ml saja.
+Garam dapur beryodium untuk campuran kuah santannya sedikit saja.
+Cara Membuat Bubur Sumsum Yang Enak dan Sederhana
+Langkah pertama yang akan kita lakukan adalah membuat bubur nya terlebih dahulu.
+Bagi 650ml santan kental yang sudah dipersiapkan menjadi dua bagian. Satu bagian dimasukkan ke dalam panci bersama daun pandan supaya aromanya harum lalu masak dengan api sedang kecil. Jangan lupa tetap diaduk aduk supaya santan tidak pecah.
+Ambil satu wadah lagi dan tuang bagian santan yang lain dengan tepung beras dan setengah sendok garam. Aduk aduk ketiga bahan tersebut sampai tercampur rata dan tidak ada gumpalan gumpalan adonan.
+Masukkan dan tuang adonan tepung beras dengan santan diatas ke dalam panci santan yang sedang direbus. Aduk aduk lagi supaya semua bahan tercampur rata dan tidak ada gumpalan gumpalan.
+Masak bubur sumsum nya sampai benar benar matang dan tanak (tidak tercium aroma tepung berasnya). Jangan lupa tetap diaduk aduk terus sampai mengental dan biasanya ada letupan letupan di buburnya. Setelah matang lalu angkat dan dinginkan terlebih dahulu sebelum disajikan.
+Sambil menunggu buburnya dingin kita masak saus santannya. Ambil satu panci kecil lalu masukkan santan kentalnya, 1 lembar daun pandan yang sudah dicuci bersih dan disimpul dan sedikit saja garam dapur beryodium. Aduk aduk sampai benar benar matang lalu angkat dan dinginkan.
+Untuk memasak gula merahnya hampir sama caranya. Masukkan gula merah yang sudah disisir halus, daun pandan yang sudah disimpul lalu beri air secukupnya (kurang lebih sekitar 100ml-120ml). Aduk aduk sampai semua gula larut dengan airnya. Kalau suka, teman teman bisa juga menambahkan sedikit kayu manis.
+</mutableString>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="KVf-0R-kfJ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lYY-nq-6Nk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1774" y="-888"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aOZ-ts-S2Y">
+            <objects>
+                <viewController id="XSC-T6-eDw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PIU-Sh-qP1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SzJ-pN-aIC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Bubur Ayam" id="Gfz-Py-Qkg">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="Wjo-rc-FgU">
+                                            <connections>
+                                                <segue destination="ZQJ-4E-H85" kind="show" id="gtu-fB-at4"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4P-1Q-d0b">
+                                <rect key="frame" x="0.0" y="44" width="375" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="resep-bubur-ayam-sarapan-simpel-20-menit"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ysa-vc-j6N">
+                                <rect key="frame" x="0.0" y="256" width="375" height="411"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">Bahan bubur ayam
+&gt;&gt; Sediakan beras kualitas bagus sebanyak 200 gram. Kualitas beras sangat penting karena berpengaruh pada tampilan bubur anda.
+&gt;&gt; Kaldu ayam sebanyak 2 liter.
+&gt;&gt; Sediakan daun salam sebanyak 3 lembar.
+&gt;&gt; Garam ± 2 sendok teh.
+
+Bumbu halus bubur ayam
+
+Ambil bawang putih ukuran sedang sebanyak 4 siung.
+Ambil juga bawang merah kira kira 6 hingga 7 buah.
+Sediakan juga ketumbar sekitar 1 sendok teh.
+Dan juga kemiri 5 butir.
+Jangan lupa kupas kunyit paling tidak 1 cm saja
+Bahan kuah bubur ayam
+
+Sebaiknya gunakan 1 ekor ayam kampung.
+Air bersih sekitar ¾ liter.
+Garam 1 sendok teh.
+Lada bubuk ± ½ sendok teh.
+Biji pala gunakan setengahnya saja.
+Sediakan juga kecap manis paling tidak 2 sendok makan.
+Sedikit minyak goreng untuk menumis.
+Bahan bahan pelengkap bubur ayam                                           1 batang seledri dan iris tipis tipis.
+Kedelai goreng paling tidak 100 gram. Sebelum menggoreng kedelai sebaiknya direndam dahulu.
+Kerupuk yang biasa digunakan untuk nasi uduk sekitar 100 gram.
+Bisa juga dengan pelengkap lainnya seperti cakwe, sate ampela, dan lainnya.
+Nah setelah semua bahan bahan telah tersedia, yuk mulai kita buat bubur ayam dan kaldunya.</mutableString>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="PsR-vh-gHd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lHE-lq-m95" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2776" y="-760"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Qa0-8K-IeE">
+            <objects>
+                <viewController id="VgK-o9-bFc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Ga-UF-sQm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MlL-Sw-kTc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Nasi Liwet" id="Bkq-p4-XOa">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="kHx-WK-LGh">
+                                            <connections>
+                                                <segue destination="ZQJ-4E-H85" kind="show" id="U4q-uk-aa5"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRx-dk-Qgs">
+                                <rect key="frame" x="0.0" y="44" width="375" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="nasi-liwet-solo-1"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AKc-pe-Gmg">
+                                <rect key="frame" x="0.0" y="256" width="375" height="411"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">Bahan Utama Nasi Liwet Khas Sunda
+
+500 gram beras
+7 siung bawang merah
+4 lembar daun salam
+4 batang serai
+penyedap rasa secukupnya
+garam secukupnya
+150 gram ikan asin/ikan teri
+1200 ml air
+Bahan Ayam Bakar Nasi Liwet Khas Sunda
+
+7 potong ayam
+2 lembar daun salam
+2 sdt garam
+50 gram gula merah
+3 batang serai
+4 sdm kecap manis
+1/4 sdt merica
+1000 ml santan kelapa kental
+1 sdt ketumbar
+minyak goreng secukupnya
+Bahan Bumbu Ayam Bakar yang dihaluskan
+
+15 siung bawang merah
+4 siung bawang putih
+Bahan Pelengkap Lainnya
+
+Tahu
+Tempe
+Aneka Lalapan
+Cara Membuat Nasi Liwet Khas Sunda
+
+Langkah pertama cuci dulu beras hingga bersih, kemudian masukan ke dalam panci
+Tambahkan air hingga dua ruas jari
+Jangan lupa tambahkan bumbu hingga rata
+Selanjutnya diamkan kurang lebih 45 menit, hingga matang
+Cara Membuat Ayam Bakar
+
+Campurkan semua bumbu haus dengan menggunakan santan, serai, daun salam, masak hingga semua harum
+Selanjutnya tambahkan garam, kecap manis, gula merah, ketumbar , aduk hingga rata
+Selanjutnya masukan ayam , masak hingga matang
+Bakar ayam sambil diolesi dengan menggunakan minyak goreng, bakar hingga kecoklatan , angkat
+Sajikan dengan nasi liwet , ayam bakar, tempe, tahu, aneka lalapan dan sambal
+Sangat pas untuk disajikan menjadi menu keluarga anda ketika berkumpul keluarga, bahkan nasi liwet dengan tambahan bahan pelengkap khas Sunda ini akan memberikan citarasa yang berbeda. Anda juga dapat menambahkan tambahan petai ke dalam nasi liwet ketika direbusnya, sangat menggugah selera.</mutableString>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="2DM-IX-PCz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XoQ-UN-dYe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3570" y="-557"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wW8-jH-nef">
+            <objects>
+                <viewController id="NUq-Ys-QO4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5XU-AA-fU9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c18-SZ-gCQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Nasi Uduk" id="0J3-sy-Qfb">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="feA-TD-prH">
+                                            <connections>
+                                                <segue destination="07Z-lO-2GO" kind="show" id="Eeo-jK-HSD"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fF-TM-erl">
+                                <rect key="frame" x="0.0" y="44" width="375" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Nasi-uduk-jakarta"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YX0-QJ-N4o">
+                                <rect key="frame" x="0.0" y="256" width="375" height="411"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">Bahan Utama Nasi Uduk
+
+300 gram beras,cuci hingga bersih. Sisihkan
+450 ml santan kelapa kental
+Bahan Bumbu Nasi Uduk
+
+2 lembar daun salam muda
+2 butir cengkeh
+2 batang serai
+2 cm kayu manis
+merica secukupnya
+pala bubuk secukupnya
+garam secukupnya
+Bahan Pelengkap Nasi Uduk
+
+Tahu
+Daging
+Telur
+Kerupuk
+Sambal Kacang
+Cara Membuat/Memasak Nasi Uduk Komplit Yang Gurih
+
+Langkah pertama beras yang sudah dicuci bersih kemudian di kukus selama kurang lebih 30 menit
+Lalu, sebari menunggu nasi di kukus , anda dapat mendidihkan santan, cengkeh, kayu manis, pala, daun salam dan serai.Masak hingga santan menjadi harum kemudian saring.
+Lanjutkan dengan mencampurkan beras yang sudah dikukus tadi menjadi aron kemudian aduk hingga rata dan santan meresap.
+Kukus hingga 45-50 menit hingga nasi lunak, angkat</mutableString>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.14980220080000001" blue="0.01003296912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="H9J-XP-Rco"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AUl-nG-nBL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3569" y="175"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Flag-map_of_Indonesia_transparent" width="784" height="297"/>
+        <image name="Nasi-uduk-jakarta" width="455" height="325"/>
+        <image name="cara-membuat-bubur-sumsum-candil" width="500" height="339"/>
+        <image name="indomie-jumbo" width="510" height="415"/>
+        <image name="lontong-sayur-spesial" width="900" height="675"/>
+        <image name="nasi-kucing-1" width="620" height="465"/>
+        <image name="nasi-liwet-solo-1" width="500" height="333"/>
+        <image name="nasikuning2-1" width="1800" height="1200"/>
+        <image name="pecel-ayu" width="550" height="403"/>
+        <image name="resep-bubur-ayam-sarapan-simpel-20-menit" width="650" height="325"/>
+        <image name="restaurant-1-300x300" width="300" height="300"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="rT9-Uv-fya"/>
+        <segue reference="4CF-pi-pbH"/>
+        <segue reference="wur-V7-p2c"/>
+    </inferredMetricsTieBreakers>
 </document>
